@@ -1,7 +1,7 @@
 import React from 'react';
 import CardContent from '@material-ui/core/CardContent';
 import LinearProgress from '@material-ui/core/LinearProgress';
-import Octokit from '@octokit/rest';
+import {Octokit} from '@octokit/rest';
 import styles from './About.module.css';
 
 
