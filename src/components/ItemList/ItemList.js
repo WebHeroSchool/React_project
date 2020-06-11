@@ -23,7 +23,9 @@ const ItemList = ({props, onClickDone, onClickDelete}) => (<ol className={styles
 </ol>);
 
 ItemList.propTypes = {
-    onClickDelete: PropTypes.func.isRequired
+    onClickDelete: PropTypes.func.isRequired,
+    onClickDone: PropTypes.func.isRequired,
+    props: PropTypes.array.isRequired
 };
 
 export default ItemList;
