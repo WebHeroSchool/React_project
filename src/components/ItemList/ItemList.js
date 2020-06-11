@@ -1,6 +1,7 @@
 import React from 'react';
 import Item from '../Item/Item';
 import styles from './ItemList.module.css';
+import PropTypes from 'prop-types';
 
 const ItemList = ({props, onClickDone, onClickDelete}) => (<ol className={styles.list}>
     {props.map((item, index)=> (
@@ -20,5 +21,11 @@ const ItemList = ({props, onClickDone, onClickDelete}) => (<ol className={styles
             </button>
         </li>))}
 </ol>);
+
+ItemList.propTypes = {
+    onClickDelete: PropTypes.func.isRequired,
+    onClickDone: PropTypes.func.isRequired,
+    props: PropTypes.array.isRequired
+};
 
 export default ItemList;
