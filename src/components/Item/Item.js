@@ -1,4 +1,3 @@
-  
 import React from 'react';
 import classname from 'classnames';
 import styles from './Item.module.css';
